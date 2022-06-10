@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projekt - 7 cudów świata</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</head>
+
+<style>
+
+    @import url(style.css);
+
+</style>
+
+<body>
+<img src="/images/ankieta.png" class="LOGOIMG">
+</br>
+<div class="TITLEbox">
+    <h1 class="titleOBJECT">ANKIETA KOŃCOWA</h1>
+</div>
+</br>
+
+<div class="rb-box">
+
+    <!-- Moduł Radio Button -->
+    <p>1. W skali od 1 do 5, jak oceniasz treść tej strony?</p>
+    <div id="rb-1" class="rb">
+      <div class="rb-tab rb-tab-active" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">1</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">2</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">3</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">4</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Moduł Radio Button -->
+    <p>2. W skali od 1 do 5, jak oceniasz design tej strony?</p>
+    <div id="rb-2" class="rb">
+      <div class="rb-tab" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">1</span>
+        </div>
+      </div><div class="rb-tab rb-tab-active" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">2</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">3</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">4</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Moduł Radio Button -->
+    <p>3. W skali od 1 do 5, jak oceniasz kolorystykę tej strony?</p>
+    <div id="rb-3" class="rb">
+      <div class="rb-tab" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">1</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">2</span>
+        </div>
+      </div><div class="rb-tab rb-tab-active" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">3</span>
+        </div>
+      </div><div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">4</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Moduł Radio Button -->
+    <p>4. W skali od 1 do 5, jak oceniasz obrazki na tej stronie?</p>
+    <div id="rb-4" class="rb">
+      <div class="rb-tab" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">1</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">2</span>
+        </div>
+      </div><div class="rb-tab" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">3</span>
+        </div>
+      </div><div class="rb-tab rb-tab-active" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">4</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Moduł Radio Button -->
+    <p>5. W skali od 1 do 5, czy dowiedziałeś/aś się czegoś ciekawgo?</p>
+    <div id="rb-5" class="rb">
+      <div class="rb-tab" data-value="4">
+        <div class="rb-spot">
+          <span class="rb-txt">4</span>
+        </div>
+      </div><div class="rb-tab" data-value="2">
+        <div class="rb-spot">
+          <span class="rb-txt">2</span>
+        </div>
+      </div><div class="rb-tab" data-value="5">
+        <div class="rb-spot">
+          <span class="rb-txt">5</span>
+        </div>
+      </div><div class="rb-tab" data-value="1">
+        <div class="rb-spot">
+          <span class="rb-txt">1</span>
+        </div>
+      </div><div class="rb-tab rb-tab-active" data-value="3">
+        <div class="rb-spot">
+          <span class="rb-txt">3</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Button -->
+    <div class="button-box">
+      <button class="button trigger">Wyślij &#9757</button>
+    </div>
+  
+</div>
+<script>
+    var survey = []; 
+
+//funkcja przełącznika:
+$(".rb-tab").click(function(){
+//przełącznik miejsca:
+$(this).parent().find(".rb-tab").removeClass("rb-tab-active");
+$(this).addClass("rb-tab-active");
+});
+
+//zapisz dane:
+$(".trigger").click(function(){
+//pusty array:
+survey = [];
+
+for (i=1; i<=$(".rb").length; i++) {
+var rb = "rb" + i;
+var rbValue = parseInt($("#rb-"+i).find(".rb-tab-active").attr("data-value"));
+
+survey.push([i, rbValue]); 
+};
+//Debug:
+debug();
+});
+
+//Debug:
+function debug(){
+var debug = "";
+for (i=0; i<survey.length; i++) {
+debug += "Nº " + survey[i][0] + " = " + survey[i][1] + "\n";
+};
+alert(debug);
+};
+</script>
+
+</br>
+</br>
+</br>
+
+<div class="clearbothfix">
+    <div class="box1">
+    <p>Po prawej stronie znajduje się menu prowadzące do konkretnych obiektów
+        uznawanych powszechnie za cudy świata wraz z ich opisem oraz galerią zdjęć.
+    </br></br>Na samym dole menu znajduje się również przeniesienie do ankiety, do której 
+        wypełnienia zachęcam po zapoznaniu się z treścią strony. </br></br>Wszystkie opinie pomagają
+        ulepszać treść na stronie.
+    </p>
+    </div>
+    <div class="box2">
+    <ul>
+	    <li><a href="index.html">Strona początkowa</a></li>
+        <li><a href="obiekt1.html">Piramida Cheopsa</a></li>
+        <li><a href="obiekt2.html">Wiszące ogrody Semiramidy</a></li>
+        <li><a href="obiekt3.html">Świątynia Artemidy w Efezie</a></li>
+        <li><a href="obiekt4.html">Posąg Zeusa w Olimpii</a></li>
+        <li><a href="obiekt5.html">Mauzoleum w Halikarnasie</a></li>
+        <li><a href="obiekt6.html">Kolos Rodyjski</a></li>
+        <li><a href="obiekt7.html">Latarnia morska na Faros</a></li>
+    </ul>
+    </div>
+</div>
+
+<footer>Autor: Jakub Szarpak 1ta2</footer>
+
+
+</body>
+
+</html>
