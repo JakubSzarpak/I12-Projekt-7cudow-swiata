@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projekt - 7 cudów świata</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<style>
+
+    @import url(style.css);
+
+</style>
+
+<body>
+<img src="/images4/4CUD-1@.jpg" class="LOGOIMG">
+</br>
+<div class="TITLEbox">
+    <h1 class="titleOBJECT">POSĄG ZEUSA W OLIMPII</h1>
+</div>
+</br>
+
+<div class="OPISOBIEKTU">
+<p class="OPISOBIEKTU-TEKST">Posąg Zeusa – antyczny posąg Zeusa z V w. p.n.e. autorstwa Fidiasza ze świątyni Zeusa w Olimpii, zaliczany przez starożytnych Greków do siedmiu cudów świata.</br></br>
+
+    Rzeźba przedstawiała siedzącego na tronie Zeusa o poważnym i dostojnym obliczu. Na głowie miał wieniec z gałązek oliwnych, z lewego ramienia zwisał mu złoty płaszcz, w prawej dłoni trzymał statuę bogini Nike, a lewą rękę wspierał na wykładanym szlachetnymi kamieniami berle.</br></br>
+    
+    Na rzeźbionych oparciach i nogach tronu ukazano postaci bóstw i sceny bitewne. Szatę i włosy Zeusa wykonano ze złota, obnażone części ciała z kości słoniowej, tron z drewna cedrowego wykładanego hebanem i szlachetnymi kamieniami.</p>
+</div>
+</br>
+</br>
+<div class="container">
+<div class="row">
+    <div class="column">
+      <img src="/images4/4CUD-1@.jpg" style="width:400px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="images4/4CUD-2@.jpg" style="width:400px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="images4/4CUD-3@.jpg" style="width:400px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="images4/4CUD-4@.jpg" style="width:400px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images4/4CUD-1@.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images4/4CUD-2@.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images4/4CUD-3@.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images4/4CUD-4@.jpg" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+  
+      <div class="column">
+        <img class="demo cursor" src="images4/4CUD-1@.jpg" style="width:100%" onclick="currentSlide(1)" alt="Posąg Zeusa w Olimpii">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images4/4CUD-2@.jpg" style="width:100%" onclick="currentSlide(2)" alt="Posąg Zeusa w Olimpii">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images4/4CUD-3@.jpg" style="width:100%" onclick="currentSlide(3)" alt="Posąg Zeusa w Olimpii">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images4/4CUD-4@.jpg" style="width:100%" onclick="currentSlide(4)" alt="Posąg Zeusa w Olimpii">
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+</br>
+</br>
+</br>
+
+<div class="clearbothfix">
+    <div class="box1">
+    <p>Po prawej stronie znajduje się menu prowadzące do konkretnych obiektów
+        uznawanych powszechnie za cudy świata wraz z ich opisem oraz galerią zdjęć.
+    </br></br>Na samym dole menu znajduje się również przeniesienie do ankiety, do której 
+        wypełnienia zachęcam po zapoznaniu się z treścią strony. </br></br>Wszystkie opinie pomagają
+        ulepszać treść na stronie.
+    </p>
+    </div>
+    <div class="box2">
+    <ul>
+	    <li><a href="index.html">Strona początkowa</a></li>
+        <li><a href="obiekt1.html">Piramida Cheopsa</a></li>
+        <li><a href="obiekt2.html">Wiszące ogrody Semiramidy</a></li>
+        <li><a href="obiekt3.html">Świątynia Artemidy w Efezie</a></li>
+        <li><a href="obiekt5.html">Mauzoleum w Halikarnasie</a></li>
+        <li><a href="obiekt6.html">Kolos Rodyjski</a></li>
+        <li><a href="obiekt7.html">Latarnia morska na Faros</a></li>
+        <li><a href="ankieta.html">Ankieta końcowa</a></li>
+    </ul>
+    </div>
+</div>
+
+<footer>Autor: Jakub Szarpak 1ta2</footer>
+
+
+</body>
+
+</html>
